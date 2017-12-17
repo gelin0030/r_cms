@@ -745,7 +745,7 @@ ul, ol {
     transition: all 1s;
 }
 .p_desc{
-    position:relative;
+    position:absolute;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
