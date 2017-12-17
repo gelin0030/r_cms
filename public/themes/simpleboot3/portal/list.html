@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{$category.name} {$category.seo_title} {$site_info.site_name|default=''}</title>
+    <meta name="keywords" content="{$category.seo_keywords},{$site_info.site_seo_keywords|default=''}"/>
+    <meta name="description" content="{$category.seo_description},{$site_info.site_seo_description|default=''}">
+    <include file="public@head"/>
+    <hook name="before_head_end"/>
+</head>
+<body class="body-white">
+<include file="public@nav"/>
+<div class="list-unstyled">
+    <img src="/upload/{$cate_path}" alt="" height="200px" width="100%">
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="">
+                <php>
+                    $where=[
+                    'post.create_time'=>['egt',0]
+                    ];
+                </php>
+                <portal:articles item="vo" where="$where" order="post.create_time DESC" page="10"
+                                 relation="categories"
+                                 categoryIds="$category.id"
+                                 returnVarName="articles_data">
+                    <div class="list-boxes">
+                        <div class="col-md-3">
+                            <img src="{:cmf_get_image_url($vo.more.thumbnail)}" alt="" style="width:200px;height: 150px;">
+                        </div>
+                        <div class="col-md-9">
+                            <h2 style="padding-top: 0px;"><a href="{:cmf_url('portal/Article/index',array('id'=>$vo['id'],'cid'=>$category['id']))}">{$vo.post_title}</a>
+                            </h2>
+                            <br>
+                            <p>{$vo.post_excerpt}</p>
+                            <div>
+                                <div class="pull-left">
+                                    <div class="list-actions">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                </portal:articles>
+
+            </div>
+            <ul class="pagination">
+                <page/>
+            </ul>
+        </div>
+    </div>
+
+    <include file="public@footer"/>
+</div>
+
+<include file="public@scripts"/>
+<hook name="before_body_end"/>
+</body>
+</html>

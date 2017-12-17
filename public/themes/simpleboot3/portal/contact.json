@@ -1,0 +1,81 @@
+{
+    "name": "联系我们页",
+    "action": "portal/Page/index",
+    "description": "联系我们页模板文件",
+    "order": 10.0,
+    "more": {
+        "vars": {
+            "baidu_map_info_window_text": {
+                "title": "百度地图标注文字",
+                "name": "baidu_map_info_window_text",
+                "value": "<br/><span class=''>地址：北京市通州区新华大街北京ONE,写字楼1301</span>",
+                "type": "text",
+                "tip": "百度地图标注文字,支持简单html代码",
+                "rule": []
+            },
+            "company_location": {
+                "title": "新华大街北京ONE",
+                "value": "116.66178,39.91334",
+                "type": "location",
+                "tip": "北京ONE",
+                "rule": {
+                    "require": true
+                }
+            },
+            "address_cn": {
+                "title": "公司地址",
+                "value": "北京市通州区新华大街北京ONE,写字楼1301",
+                "type": "text",
+                "tip": "",
+                "rule": {
+                    "require": true
+                }
+            },
+            "address_en": {
+                "title": "公司地址（英文）",
+                "value": "NO.1301 Xin hua Road 北京ONE, Beijing China",
+                "type": "text",
+                "tip": "",
+                "rule": {
+                    "require": true
+                }
+            },
+            "email": {
+                "title": "公司邮箱",
+                "value": "17777777777@163.com",
+                "type": "text",
+                "tip": "",
+                "rule": {
+                    "require": true
+                }
+            },
+            "phone_cn": {
+                "title": "公司电话",
+                "value": "400-856-6626",
+                "type": "text",
+                "tip": "",
+                "rule": {
+                    "require": true
+                }
+            },
+            "phone_en": {
+                "title": "公司电话（英文）",
+                "value": "400-856-6626",
+                "type": "text",
+                "tip": "",
+                "rule": {
+                    "require": true
+                }
+            },
+            "qq": {
+                "title": "联系QQ",
+                "value": "1911930980",
+                "type": "text",
+                "tip": "多个 QQ以英文逗号隔开",
+                "rule": {
+                    "require": true
+                }
+            }
+        }
+    }
+}

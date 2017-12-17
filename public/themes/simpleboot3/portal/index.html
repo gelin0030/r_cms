@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>首页 {$site_info.site_name|default=''}</title>
+    <meta name="keywords" content="{$site_info.site_seo_keywords|default=''}"/>
+    <meta name="description" content="{$site_info.site_seo_description|default=''}">
+    <include file="public@head"/>
+    <link href="__TMPL__/public/assets/css/slippry/slippry.css?<php>echo time();</php>" rel="stylesheet">
+    <style>
+        .cos1 .stylesgoleft {
+            position: relative;
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-top: 30px;
+            margin-left: -20px;
+            background: url('__TMPL__/public/assets/images/e/left.png') no-repeat;
+            cursor: pointer;
+            z-index: 999;
+        }
+
+        .cos1 .stylesgoright {
+            position: relative;
+            float: right;
+            width: 50px;
+            height: 50px;
+            margin-top: 30px;
+            margin-right: -20px;
+            background: url('__TMPL__/public/assets/images/e/right.png') no-repeat;
+            cursor: pointer;
+            z-index: 999;
+        }
+    </style>
+    <hook name="before_head_end"/>
+</head>
+<body class="body-white">
+<include file="public@nav"/>
+<div>
+    <ul id="home-slider" class="list-unstyled">
+        <php>
+            $top_slide_id=empty($theme_vars['top_slide'])?1:$theme_vars['top_slide'];
+        </php>
+        <slides id="$top_slide_id">
+            <li>
+                <div class="caption-wraper">
+                    <div class="caption">{$vo.title|default=''}</div>
+                </div>
+                <a href="{$vo.url|default=''}"><img src="{:cmf_get_image_url($vo.image)}" alt=""></a>
+            </li>
+        </slides>
+        <noslides id="$top_slide_id">
+            <li>
+                <div class="caption-wraper">
+                    <div class="caption">此幻灯片只是演示,您没有设置任何幻灯片,请到后台模板设置！</div>
+                </div>
+                <a href=""><img src="__TMPL__/public/assets/images/demo/1.jpg" alt=""></a>
+            </li>
+            <li>
+                <div class="caption-wraper">
+                    <div class="caption">此幻灯片只是演示,您没有设置任何幻灯片,请到后台模板设置！</div>
+                </div>
+                <a href=""><img src="__TMPL__/public/assets/images/demo/2.jpg" alt=""></a>
+            </li>
+            <li>
+                <div class="caption-wraper">
+                    <div class="caption">此幻灯片只是演示,您没有设置任何幻灯片,请到后台模板设置！</div>
+                </div>
+                <a href=""><img src="__TMPL__/public/assets/images/demo/3.jpg" alt=""></a>
+            </li>
+        </noslides>
+    </ul>
+
+    <div class="container">
+        <!--服务项目-->
+        <div class="p_title">
+            <div class="text-center">
+                <span class="p_body" ;>服务项目/Service</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="p_article">
+                    <img class="img-cover" src="__TMPL__/public/assets/images/e/1.png" alt="">
+                    <div class="p_desc p_x">
+                        <h3><b>企业推广</b></h3>
+                        <div>凡是通过各种手段进行推广，都属于企业推广。㊭ 重在推广，更注重的是通过推广后</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="p_article">
+                    <img class="img-cover" src="__TMPL__/public/assets/images/e/2.png" alt="">
+                    <div class="p_desc p_x">
+                        <h3><b>网站推广</b></h3>
+                        <div>凡是通过各种手段进行推广，都属于企业推广。㊭ 重在推广，更注重的是通过推广后</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="p_article p_article_line">
+                    <img class="img-cover" src="__TMPL__/public/assets/images/e/3.png" alt="">
+                    <div class="p_desc p_y">
+                        <h3><b>视觉设计</b></h3>
+                        <div>凡是通过各种手段进行推广，都属于企业推广。㊭ 重在推广，更注重的是通过推广后</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--合作客户-->
+        <div class="p_title">
+            <div class="text-center">
+                <span class="p_body" ;>合作客户/Customer</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cos" id="cos">
+                <div class="cos1 clearfix">
+                    <div class="stylesgoleft" id="goleft"></div>
+                    <div class="maindiv1 " id="maindiv1">
+                        <ul id="count1">
+                            <li>
+                                <div class="playerdetail">
+                                    <div class="detailimg"><img src="__TMPL__/public/assets/images/e/1.png"/></div>
+                                    <!--<div class="teanames">乐静老师1</div>-->
+                                    <!--<div class="teadetail">获得新加坡南阳理工学院计算机学士学位擅长营销学培训</div>-->
+                                    <!--<a class="checkdetail" href="#"></a>-->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="playerdetail">
+                                    <div class="detailimg"><img src="__TMPL__/public/assets/images/e/1.png"/></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="playerdetail">
+                                    <div class="detailimg"><img src="__TMPL__/public/assets/images/e/1.png"/></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="playerdetail">
+                                    <div class="detailimg"><img src="__TMPL__/public/assets/images/e/1.png"/></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="playerdetail">
+                                    <div class="detailimg"><img src="__TMPL__/public/assets/images/e/1.png"/></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="playerdetail">
+                                    <div class="detailimg"><img src="__TMPL__/public/assets/images/e/1.png"/></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="stylesgoright" id="goright"></div>
+                </div>
+            </div>
+        </div>
+
+        <!--关于我们-->
+        <div class="p_title">
+            <div class="text-center">
+                <span class="p_body" ;>关于我们/About</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="p_article">
+                    <ul class="about_me_ul">
+                        <li>
+                            <div>
+                                <div class="sign"><b>|</b></div>
+                                <div class="content">
+                                    <div class="title"><b>愿景</b></div>
+                                    <div class="desc">成为大众信赖和喜爱的国民企业</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="sign"><b>|</b></div>
+                                <div class="content">
+                                    <div class="title"><b>使命</b></div>
+                                    <div class="desc">助力中小企业人，实现联合创富梦</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="sign"><b>|</b></div>
+                                <div class="content">
+                                    <div class="title"><b>发展理念</b></div>
+                                    <div class="desc">做实、做强、做大、做好、做长</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="sign"><b>|</b></div>
+                                <div class="content">
+                                    <div class="title"><b>企业精神</b></div>
+                                    <div class="desc"> 自然 真实 高效</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="sign"><b>|</b></div>
+                                <div class="content">
+                                    <div class="title"><b>价值观</b></div>
+                                    <div class="desc"> 诚实守信 业绩导向 以人为本 创新发展</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="p_article">
+                    <img class="img-cover" src="__TMPL__/public/assets/images/e/floor.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!--联系我们-->
+        <div class="p_title">
+            <div class="text-center">
+                <span class="p_body" ;>联系我们/Contact</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="p_article">
+                    <img class="img-cover" src="__TMPL__/public/assets/images/e/pos.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="contact">
+                    <div>网址：www.bjqhlx.com</div>
+                    <div>邮箱：17777777777@163.com</div>
+                    <div>电话：400-856-6626</div>
+                    <div>地址：北京市通州区新华大街北京ONE写字楼1301室</div>
+                </div>
+            </div>
+        </div>
+        <!---->
+        <include file="public@footer"/>
+    </div>
+</div>
+<!-- /container -->
+<include file="public@scripts"/>
+<script src="__TMPL__/public/assets/js/slippry.min.js"></script>
+<script>
+    $(function () {
+        $("#home-slider").slippry({
+            transition: 'fade',
+            useCSS: true,
+            captions: false,
+            speed: 1000,
+            pause: 3000,
+            auto: true,
+            preload: 'visible'
+        });
+        $("#home-slider").show();
+    });
+</script>
+<script type="text/javascript">
+    window.onload = function () {
+        var oBtnLeft = document.getElementById("goleft");
+        var oBtnRight = document.getElementById("goright");
+        var oDiv = document.getElementById("cos");
+        var oDiv1 = document.getElementById("maindiv1");
+        var oUl = oDiv.getElementsByTagName("ul")[0];
+        var aLi = oUl.getElementsByTagName("li");
+        var now = -5 * (aLi[0].offsetWidth + 13);
+        oUl.style.width = aLi.length * (aLi[0].offsetWidth + 13) + 'px';
+        oBtnRight.onclick = function () {
+            var n = Math.floor((aLi.length * (aLi[0].offsetWidth + 13) + oUl.offsetLeft) / aLi[0].offsetWidth);
+
+            if (n <= 5) {
+                move(oUl, 'left', 0);
+            }
+            else {
+                move(oUl, 'left', oUl.offsetLeft + now);
+            }
+        }
+        oBtnLeft.onclick = function () {
+            var now1 = -Math.floor((aLi.length / 5)) * 5 * (aLi[0].offsetWidth + 13);
+
+            if (oUl.offsetLeft >= 0) {
+                move(oUl, 'left', now1);
+            }
+            else {
+                move(oUl, 'left', oUl.offsetLeft - now);
+            }
+        }
+        var timer = setInterval(oBtnRight.onclick, 5000);
+        oDiv.onmouseover = function () {
+            clearInterval(timer);
+        }
+        oDiv.onmouseout = function () {
+            timer = setInterval(oBtnRight.onclick, 5000);
+        }
+
+    };
+
+    function getStyle(obj, name) {
+        if (obj.currentStyle) {
+            return obj.currentStyle[name];
+        }
+        else {
+            return getComputedStyle(obj, false)[name];
+        }
+    }
+
+    function move(obj, attr, iTarget) {
+        clearInterval(obj.timer)
+        obj.timer = setInterval(function () {
+            var cur = 0;
+            if (attr == 'opacity') {
+                cur = Math.round(parseFloat(getStyle(obj, attr)) * 100);
+            }
+            else {
+                cur = parseInt(getStyle(obj, attr));
+            }
+            var speed = (iTarget - cur) / 6;
+            speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+            if (iTarget == cur) {
+                clearInterval(obj.timer);
+            }
+            else if (attr == 'opacity') {
+                obj.style.filter = 'alpha(opacity:' + (cur + speed) + ')';
+                obj.style.opacity = (cur + speed) / 100;
+            }
+            else {
+                obj.style[attr] = cur + speed + 'px';
+            }
+        }, 30);
+    }
+</script>
+<hook name="before_body_end"/>
+</body>
+</html>
