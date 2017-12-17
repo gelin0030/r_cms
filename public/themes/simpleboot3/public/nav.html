@@ -1,0 +1,40 @@
+<style>
+.logo{
+    margin-top: -30px;
+}
+</style>
+<nav class="navbar navbar-default navbar-fixed-top active nav-css">
+    <div class="container company-logo">
+        <a class="navbar-brand logo" href="/"><img src="__TMPL__/public/assets/images/logo.png"></a>
+    </div>
+    <div class="container" style="margin-top: 10px;">
+        <div class="">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse  nav-center" id="bs-example-navbar-collapse-1">
+            <ul id="main-menu" class="nav navbar-nav">
+                <navigation nav-id="" root="" id="main-navigation" class="nav navbar-nav navbar-nav-custom" max-level="0">
+                    <navigationMenu root="li" class="menu-item menu-item-level-{$level}">
+                        <a href="{$menu.href|default=''}" target="{$menu.target|default=''}">
+                            {$menu.name|default=''}
+                        </a>
+                    </navigationMenu>
+                    <navigationFolder root="li"
+                                      class="dropdown dropdown-custom dropdown-custom-level-{$level}"
+                                      dropdown="ul"
+                                      dropdown-class="dropdown-menu dropdown-menu-level-{$level}">
+                        <a href="#" class="dropdown-toggle dropdown-toggle-{$level}" data-toggle="dropdown">
+                            {$menu.name|default=''}<span class="caret"></span>
+                        </a>
+                    </navigationFolder>
+                </navigation>
+            </ul>
+        </div>
+    </div>
+</nav>
