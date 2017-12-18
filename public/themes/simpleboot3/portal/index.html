@@ -43,7 +43,9 @@
         <slides id="$top_slide_id">
             <li>
                 <div class="caption-wraper">
-                    <div class="caption">{$vo.title|default=''}</div>
+                    <if condition='$vo.content'>
+                        <div class="caption">{$vo.content|default=''}</div>
+                    </if>
                 </div>
                 <a href="{$vo.url|default=''}"><img src="{:cmf_get_image_url($vo.image)}" alt=""></a>
             </li>
