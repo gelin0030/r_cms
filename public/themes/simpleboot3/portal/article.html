@@ -22,9 +22,16 @@
 </head>
 <body class="body-white">
 <include file="public@nav"/>
-<div class="list-unstyled">
-    <img src="{:cmf_get_image_url($article.more.thumbnail)}" alt="" height="200px" width="100%">
-</div>
+<ul id="home-slider" class="list-unstyled">
+    <php>
+        $photos=empty($article['more']['photos'])?1:$article['more']['photos'];
+    </php>
+    <volist name="$photos" id="vo">
+        <li>
+            <img src="{:cmf_get_image_url($vo.url)}" alt=""  height="200px" width="100%">
+        </li>
+    </volist>
+</ul>
 <div class="container tc-main">
     <div class="row">
         <div class="col-md-12">

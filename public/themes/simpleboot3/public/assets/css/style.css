@@ -7,6 +7,9 @@ body {
 body.body-white {
     background: #fff;
 }
+a{
+    color: #000000;
+}
 .navbar-default{
     background-color: rgba(255,255,255,1);
 }
@@ -657,7 +660,7 @@ ul.tc-photos {
 }
 
 .contact {
-    padding-top: 150px;
+    padding-top: 100px;
 }
 
 .contact div {
@@ -685,6 +688,7 @@ ul.tc-photos {
     height: 150px;
     overflow: hidden;
     position: relative;
+    margin-left: 20px;
 }
 
 .maindiv1 ul {
@@ -695,9 +699,8 @@ ul.tc-photos {
 
 .maindiv1 ul li {
     float: left;
-    width: 200px;
+    width: 210px;
     height: 145px;
-    margin-left: 13px;
     padding-left: 20px;
 }
 
@@ -717,32 +720,51 @@ ul, ol {
     padding: 10px 80px;
 }
 .p_article{
+    cursor: pointer;
+    overflow: hidden;
     position:relative;
     height: 450px;
     margin:0 auto;
 }
+
+.p_article_part {
+    cursor: pointer;
+    overflow: hidden;
+    position:relative;
+    height: 220px;
+    margin:0 auto;
+}
 .p_article_line{
+    overflow: hidden;
     height: 250px;
 }
-.p_article .img-cover{
+.img-cover{
     position:absolute;
     width: 100%;
     height: 100%;
     float:left;
     z-index:-1;
-    -webkit-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
-    -moz-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
-    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
+    vertical-align: middle;
+    -webkit-transition: -webkit-transform .2s;
+    transition: transform .2s;
+    /*-webkit-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);*/
+    /*-moz-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);*/
+    /*box-shadow: 4px 4px 4px rgba(0,0,0,0.2);*/
+    /*-webkit-transition: all 0.5s ease-out;*/
+    /*-moz-transition: all 0.5s ease;*/
+    /*-o-transition: all 0.5s ease;*/
 }
-.p_article:hover{
-
-    -webkit-transform: rotate(0.5deg);
-    -moz-transform: rotate(0.5deg);
-    -o-transform: rotate(0.5deg);
-    transition: all 1s;
+.p_article_part:hover  .img-cover{
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    zoom: 1.05;
+}
+.p_article:hover  .img-cover{
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    zoom: 1.05;
 }
 .p_desc{
     position:absolute;
@@ -753,6 +775,16 @@ ul, ol {
     padding: 20px;
 }
 
+.p_desc_right{
+    position:absolute;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 30%;
+    height: 100%;
+    float:right;
+    right: 0%;
+    padding: 40px 20px 20px 20px;
+}
 .p_x{
     height: 40%;
     top: 60%;
@@ -789,6 +821,47 @@ ul, ol {
 .nav-center{
     position: relative;
     left: 15%;
+}
+
+.news{
+    position: relative;
+    padding-top: 15px;
+}
+.news-date {
+    position: relative;
+    float: left;
+    width: 100px;
+    border-right: solid #2c2c2c 1px;
+    height: 80px;
+    text-align: right;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+.news-date .news-time-day{
+    color: #666666;
+    font-size: 24px;
+}
+.news-date .news-time-year {
+    margin-top: -10px;
+    color: #999999;
+}
+.news-content {
+    float: left;
+    position: absolute;
+    left: 110px;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.news-content .title{
+    font-weight: 700;
+    padding-left: 10px;
+    font-size: 18px;
+    color: #666666;
+}
+.news-content .content {
+    padding: 5px;
+    font-size: 12px;
+    color: #999999;
 }
 @media (max-width: 992px) {
     .nav-center {

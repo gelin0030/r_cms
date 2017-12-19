@@ -418,7 +418,7 @@
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  border-radius: 50%;
+  border-radius: 10px;
 }
 .sy-pager li.sy-active a{
   border-radius: 10px;
@@ -442,7 +442,7 @@
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  border-radius: 50%;
+  border-radius: 10px;
 }
 .sy-pager li a:link, .sy-pager li a:visited {
   opacity: 1.0;

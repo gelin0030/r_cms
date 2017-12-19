@@ -10,11 +10,12 @@
         .cos1 .stylesgoleft {
             position: relative;
             float: left;
-            width: 50px;
-            height: 50px;
-            margin-top: 30px;
+            width: 40px;
+            height: 40px;
+            margin-top: 40px;
             margin-left: -20px;
             background: url('__TMPL__/public/assets/images/e/left.png') no-repeat;
+            background-size: 40px 40px;
             cursor: pointer;
             z-index: 999;
         }
@@ -22,14 +23,16 @@
         .cos1 .stylesgoright {
             position: relative;
             float: right;
-            width: 50px;
-            height: 50px;
-            margin-top: 30px;
+            width: 40px;
+            height: 40px;
+            margin-top: 40px;
             margin-right: -20px;
             background: url('__TMPL__/public/assets/images/e/right.png') no-repeat;
+            background-size: 40px 40px;
             cursor: pointer;
             z-index: 999;
         }
+
     </style>
     <hook name="before_head_end"/>
 </head>
@@ -84,17 +87,25 @@
                 <div class="p_article">
                     <img class="img-cover" src="__TMPL__/public/assets/images/e/1.png" alt="">
                     <div class="p_desc p_x">
-                        <h3><b>企业推广</b></h3>
-                        <div>凡是通过各种手段进行推广，都属于企业推广。㊭ 重在推广，更注重的是通过推广后</div>
+                        <h3><b>活动策划</b></h3>
+                        <div>公司年会、产品发布会、宣传片拍摄等线下 活动 </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="p_article">
+                <div class="p_article_part">
                     <img class="img-cover" src="__TMPL__/public/assets/images/e/2.png" alt="">
-                    <div class="p_desc p_x">
-                        <h3><b>网站推广</b></h3>
-                        <div>凡是通过各种手段进行推广，都属于企业推广。㊭ 重在推广，更注重的是通过推广后</div>
+                    <div class="p_desc_right">
+                        <h3><b>网络公关</b></h3>
+                        <div>PR稿件（门户网站、 垂直网站） 舆情监测 系统( 外包 ) </div>
+                    </div>
+                </div>
+
+                <div class="p_article_part" style="margin-top: 10px;">
+                    <img class="img-cover" src="__TMPL__/public/assets/images/e/3.png" alt="">
+                    <div class="p_desc_right">
+                        <h3><b>内容营销</b></h3>
+                        <div>病毒视频营销与事件 营销 </div>
                     </div>
                 </div>
             </div>
@@ -103,7 +114,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="p_article p_article_line">
-                    <img class="img-cover" src="__TMPL__/public/assets/images/e/3.png" alt="">
+                    <img class="img-cover" src="__TMPL__/public/assets/images/e/4.png" alt="">
                     <div class="p_desc p_y">
                         <h3><b>视觉设计</b></h3>
                         <div>凡是通过各种手段进行推广，都属于企业推广。㊭ 重在推广，更注重的是通过推广后</div>
@@ -126,35 +137,32 @@
                         <ul id="count1">
                             <li>
                                 <div class="playerdetail">
-                                    <div class="detailimg"><img src="__TMPL__/public/assets/images/e/1.png"/></div>
-                                    <!--<div class="teanames">乐静老师1</div>-->
-                                    <!--<div class="teadetail">获得新加坡南阳理工学院计算机学士学位擅长营销学培训</div>-->
-                                    <!--<a class="checkdetail" href="#"></a>-->
+                                    <div class="detailimg"><img src="__TMPL__/public/assets/images/e/customer_1.png"/></div>
                                 </div>
                             </li>
                             <li>
                                 <div class="playerdetail">
-                                    <div class="detailimg"><img src="__TMPL__/public/assets/images/e/1.png"/></div>
+                                    <div class="detailimg"><img src="__TMPL__/public/assets/images/e/customer_2.png"/></div>
                                 </div>
                             </li>
                             <li>
                                 <div class="playerdetail">
-                                    <div class="detailimg"><img src="__TMPL__/public/assets/images/e/1.png"/></div>
+                                    <div class="detailimg"><img src="__TMPL__/public/assets/images/e/customer_3.png"/></div>
                                 </div>
                             </li>
                             <li>
                                 <div class="playerdetail">
-                                    <div class="detailimg"><img src="__TMPL__/public/assets/images/e/1.png"/></div>
+                                    <div class="detailimg"><img src="__TMPL__/public/assets/images/e/customer_4.png"/></div>
                                 </div>
                             </li>
                             <li>
                                 <div class="playerdetail">
-                                    <div class="detailimg"><img src="__TMPL__/public/assets/images/e/1.png"/></div>
+                                    <div class="detailimg"><img src="__TMPL__/public/assets/images/e/customer_5.png"/></div>
                                 </div>
                             </li>
                             <li>
                                 <div class="playerdetail">
-                                    <div class="detailimg"><img src="__TMPL__/public/assets/images/e/1.png"/></div>
+                                    <div class="detailimg"><img src="__TMPL__/public/assets/images/e/customer_6.png"/></div>
                                 </div>
                             </li>
                         </ul>
@@ -163,6 +171,52 @@
                 </div>
             </div>
         </div>
+
+        <widget name="last_news">
+            <!--新闻动态-->
+            <div class="p_title">
+                <div class="text-center">
+                    <span class="p_body">新闻动态/News</span>
+                </div>
+            </div>
+            <div class="row">
+                <php>
+                    $widget["vars"]["last_news_category_id"] = empty($widget["vars"]["last_news_category_id"])?1:$widget["vars"]["last_news_category_id"];
+                    $last_news_limit=3;
+                </php>
+                <div class="col-md-6">
+                    <a href='{:cmf_url("portal/List/index",array("id"=>$widget["vars"]["last_news_category_id"]))}'>
+                        <div class="p_article"  style="height: 300px;">
+                            <img class="img-cover" src="__TMPL__/public/assets/images/e/5.png" alt="">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-6">
+
+                    <portal:articles limit="$last_news_limit" order="post.published_time DESC"
+                                     categoryIds="$widget.vars.last_news_category_id">
+                        <div class="row">
+                            <div class="news">
+                                <div class="news-date">
+                                    <div class="news-time-day"><php>echo date("m-d", $vo['create_time']);</php></div>
+                                    <div class="news-time-year"><php>echo date("Y", $vo['create_time']);</php></div>
+                                </div>
+                                <div class="news-content">
+                                    <div class="title">
+                                        <a href="{:cmf_url('portal/Article/index',array('id'=>$vo.id,'cid'=>$vo.category_id))}">
+                                            {$vo.post_title}
+                                        </a>
+                                    </div>
+                                    <div class="content"><php>echo mb_strimwidth($vo['post_excerpt'], 0, 120, '...');</php></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </portal:articles>
+                </div>
+            </div>
+        </widget>
 
         <!--关于我们-->
         <div class="p_title">
@@ -237,14 +291,14 @@
         </div>
         <div class="row">
             <div class="col-md-6">
-                <div class="p_article">
-                    <img class="img-cover" src="__TMPL__/public/assets/images/e/pos.png" alt="">
+                <div class="p_article"  style="height: 350px;">
+                    <img class="img-cover" src="__TMPL__/public/assets/images/e/map.png" alt="">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="contact">
                     <div>网址：www.bjqhlx.com</div>
-                    <div>邮箱：17777777777@163.com</div>
+                    <div>邮箱：17778075930@163.com</div>
                     <div>电话：400-856-6626</div>
                     <div>地址：北京市通州区新华大街北京ONE写字楼1301室</div>
                 </div>
@@ -273,14 +327,20 @@
 </script>
 <script type="text/javascript">
     window.onload = function () {
+        // pic hover
+//        $(".p_article").hover(function(){
+//            $(this).find('img').addClass('img-cover_hover')
+//        });
+
+
         var oBtnLeft = document.getElementById("goleft");
         var oBtnRight = document.getElementById("goright");
         var oDiv = document.getElementById("cos");
         var oDiv1 = document.getElementById("maindiv1");
         var oUl = oDiv.getElementsByTagName("ul")[0];
         var aLi = oUl.getElementsByTagName("li");
-        var now = -5 * (aLi[0].offsetWidth + 13);
-        oUl.style.width = aLi.length * (aLi[0].offsetWidth + 13) + 'px';
+        var now = -4 * (aLi[0].offsetWidth);
+        oUl.style.width = aLi.length * (aLi[0].offsetWidth) + 'px';
         oBtnRight.onclick = function () {
             var n = Math.floor((aLi.length * (aLi[0].offsetWidth + 13) + oUl.offsetLeft) / aLi[0].offsetWidth);
 
@@ -292,7 +352,7 @@
             }
         }
         oBtnLeft.onclick = function () {
-            var now1 = -Math.floor((aLi.length / 5)) * 5 * (aLi[0].offsetWidth + 13);
+            var now1 = -Math.floor((aLi.length / 4)) * 4 * (aLi[0].offsetWidth);
 
             if (oUl.offsetLeft >= 0) {
                 move(oUl, 'left', now1);
@@ -330,7 +390,7 @@
             else {
                 cur = parseInt(getStyle(obj, attr));
             }
-            var speed = (iTarget - cur) / 6;
+            var speed = (iTarget - cur) / 4;
             speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
             if (iTarget == cur) {
                 clearInterval(obj.timer);

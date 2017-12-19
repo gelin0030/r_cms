@@ -1,15 +1,14 @@
 <br>
 <!-- Footer ================================================== -->
-<hr>
+<div class="links" style="text-align: center;padding-top: 20px;">
+    <links>
+        <a href="{$vo.url|default=''}" target="{$vo.target|default=''}">{$vo.name|default=''}</a>&nbsp;
+    </links>
+</div>
+<hr style="width: 100%; margin-top: 5px;">
 <div id="footer">
     <hook name="footer_start"/>
-    <div class="links">
-        <links>
-            <a href="{$vo.url|default=''}" target="{$vo.target|default=''}">{$vo.name|default=''}</a>&nbsp;
-        </links>
-
-    </div>
-    <p>
+    <p style="text-align: center;">
         备案号:
         <notempty name="site_info.site_icp">
             <a href="http://www.miitbeian.gov.cn/" target="_blank">{$site_info.site_icp}</a>
@@ -17,10 +16,6 @@
             请在后台设置"网站信息"设置"备案信息"
         </notempty>
         <br>
-        <div class="pull-right">
-            Made by <a href="http://www.thinkcmf.com" target="_blank">启航理想</a>
-        </div>
-
     </p>
 </div>
 <div id="backtotop">
