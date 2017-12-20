@@ -84,42 +84,50 @@
         </div>
         <div class="row">
             <div class="col-md-6">
-                <div class="p_article">
-                    <img class="img-cover" src="__TMPL__/public/assets/images/e/1.png" alt="">
-                    <div class="p_desc p_x">
-                        <h3><b>活动策划</b></h3>
-                        <div>公司年会、产品发布会、宣传片拍摄等线下 活动 </div>
+                <a href="/portal/list/index/id/15.html">
+                    <div class="p_article">
+                        <img class="img-cover" src="__TMPL__/public/assets/images/e/1.png" alt="">
+                        <div class="p_desc p_x">
+                            <h3><b>活动策划</b></h3>
+                            <div>公司年会、产品发布会、宣传片拍摄等线下 活动 </div>
+                        </div>
                     </div>
-                </div>
+                </a>
+
             </div>
             <div class="col-md-6">
-                <div class="p_article_part">
-                    <img class="img-cover" src="__TMPL__/public/assets/images/e/2.png" alt="">
-                    <div class="p_desc_right">
-                        <h3><b>网络公关</b></h3>
-                        <div>PR稿件（门户网站、 垂直网站） 舆情监测 系统( 外包 ) </div>
+                <a href="/portal/page/index/id/37.html">
+                    <div class="p_article_part">
+                        <img class="img-cover" src="__TMPL__/public/assets/images/e/2.png" alt="">
+                        <div class="p_desc_right">
+                            <h3><b>网络公关</b></h3>
+                            <div>PR稿件（门户网站、 垂直网站） 舆情监测 系统( 外包 ) </div>
+                        </div>
                     </div>
-                </div>
-
-                <div class="p_article_part" style="margin-top: 10px;">
-                    <img class="img-cover" src="__TMPL__/public/assets/images/e/3.png" alt="">
-                    <div class="p_desc_right">
-                        <h3><b>内容营销</b></h3>
-                        <div>病毒视频营销与事件 营销 </div>
+                </a>
+                <a href="/portal/page/index/id/39.html">
+                    <div class="p_article_part" style="margin-top: 10px;">
+                        <img class="img-cover" src="__TMPL__/public/assets/images/e/3.png" alt="">
+                        <div class="p_desc_right">
+                            <h3><b>内容营销</b></h3>
+                            <div>病毒视频营销与事件 营销 </div>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
         <br>
         <div class="row">
             <div class="col-md-12">
-                <div class="p_article p_article_line">
-                    <img class="img-cover" src="__TMPL__/public/assets/images/e/4.png" alt="">
-                    <div class="p_desc p_y">
-                        <h3><b>视觉设计</b></h3>
-                        <div>凡是通过各种手段进行推广，都属于企业推广。㊭ 重在推广，更注重的是通过推广后</div>
+                <a href="/portal/page/index/id/38.html">
+                    <div class="p_article p_article_line">
+                        <img class="img-cover" src="__TMPL__/public/assets/images/e/4.png" alt="">
+                        <div class="p_desc p_y">
+                            <h3><b>平台运营</b></h3>
+                            <div>微信运营、微博运营、知乎平台运营等知名平台运营</div>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
 
@@ -192,15 +200,14 @@
                     </a>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6"  style="padding: 20px;">
 
                     <portal:articles limit="$last_news_limit" order="post.published_time DESC"
                                      categoryIds="$widget.vars.last_news_category_id">
                         <div class="row">
                             <div class="news">
                                 <div class="news-date">
-                                    <div class="news-time-day"><php>echo date("m-d", $vo['create_time']);</php></div>
-                                    <div class="news-time-year"><php>echo date("Y", $vo['create_time']);</php></div>
+
                                 </div>
                                 <div class="news-content">
                                     <div class="title">
