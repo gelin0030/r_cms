@@ -101,6 +101,10 @@ class ThemeModel extends Model
             $file       = preg_replace('/^themes\/' . $theme . '\//', '', $tplFile);
             $file       = strtolower($file);
             $config     = json_decode(file_get_contents($configFile), true);
+            if ($config == null){
+                echo $file. " error line: ".json_last_error().": " .json_last_error_msg();die;
+            }
+
             $findFile   = Db::name('theme_file')->where(['theme' => $theme, 'file' => $file])->find();
             $isPublic   = empty($config['is_public']) ? 0 : 1;
             $listOrder  = empty($config['order']) ? 0 : floatval($config['order']);

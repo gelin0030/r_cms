@@ -22,7 +22,7 @@
         },
         "widgets": {
             "features": {
-                "title": "了解启航理想",
+                "title": "服务项目",
                 "display": "1",
                 "vars": {
                     "sub_title": {
@@ -82,7 +82,7 @@
                             "img_url": {
                                 "title": "图标",
                                 "value": "",
-                                "type": "text"
+                                "type": "image"
                             },
                             "content": {
                                 "title": "描述",
@@ -91,10 +91,80 @@
                             }
                         },
                         "tip": ""
-
                     }
                 }
             },
+            "customers": {
+                "title": "合作客户",
+                "display": "1",
+                "vars": {
+                    "sub_title": {
+                        "title": "标题",
+                        "value": "合作客户/Customer",
+                        "type": "text",
+                        "placeholder": "请输入标题",
+                        "tip": "",
+                        "rule": {
+                            "require": true
+                        }
+                    },
+                    "values": {
+                        "title": "合作客户",
+                        "value": [
+                            {
+                                "title": "",
+                                "url": "#",
+                                "img_url": "public/assets/images/e/customer_1.png"
+                            },
+                            {
+                                "title": "",
+                                "url": "#",
+                                "img_url": "public/assets/images/e/customer_2.png"
+                            },
+                            {
+                                "title": "",
+                                "url": "#",
+                                "img_url": "public/assets/images/e/customer_3.png"
+                            },
+                            {
+                                "title": "",
+                                "url": "#",
+                                "img_url": "public/assets/images/e/customer_4.png"
+                            },
+                            {
+                                "title": "",
+                                "url": "#",
+                                "img_url": "public/assets/images/e/customer_5.png"
+                            },
+                            {
+                                "title": "",
+                                "url": "#",
+                                "img_url": "public/assets/images/e/customer_6.png"
+                            }
+                        ],
+                        "type": "array",
+                        "item": {
+                            "title": {
+                                "title": "标题",
+                                "value": "",
+                                "type": "text"
+                            },
+                            "url": {
+                                "title": "链接",
+                                "value": "",
+                                "type": "text"
+                            },
+                            "img_url": {
+                                "title": "图标",
+                                "value": "",
+                                "type": "image"
+                            }
+                        },
+                        "tip": ""
+                    }
+                }
+            },
+
             "last_news": {
                 "title": "新闻动态/News",
                 "display": "1",
@@ -114,7 +184,162 @@
                         }
                     }
                 }
+            },
+
+            "about": {
+                "title": "关于我们",
+                "display": "1",
+                "vars": {
+                    "sub_title": {
+                        "title": "标题",
+                        "value": "关于我们/About",
+                        "type": "text",
+                        "placeholder": "请输入标题",
+                        "tip": "",
+                        "rule": {
+                            "require": true
+                        }
+                    },
+                    "image": {
+                        "title": "图片",
+                        "value": "",
+                        "type": "image",
+                        "placeholder": "请输入标题",
+                        "tip": "",
+                        "rule": {
+                            "require": true
+                        }
+                    },
+                    "values": {
+                        "title": "合作客户",
+                        "value": [
+                            {
+                                "title": "愿景",
+                                "url": "#",
+                                "content": "成为大众信赖和喜爱的国民企业"
+                            },
+                            {
+                                "title": "使命",
+                                "url": "#",
+                                "content": "助力中小企业人，实现联合创富梦"
+                            },
+                            {
+                                "title": "发展理念",
+                                "url": "#",
+                                "content": "做实、做强、做大、做好、做长"
+                            },
+                            {
+                                "title": "企业精神",
+                                "url": "#",
+                                "content": "自然 真实 高效"
+                            },
+                            {
+                                "title": "价值观",
+                                "url": "#",
+                                "content": "诚实守信 业绩导向 以人为本 创新发展"
+                            }
+
+                        ],
+                        "type": "array",
+                        "item": {
+                            "title": {
+                                "title": "标题",
+                                "value": "",
+                                "type": "text"
+                            },
+                            "url": {
+                                "title": "链接",
+                                "value": "",
+                                "type": "text"
+                            },
+                            "content": {
+                                "title": "图标",
+                                "value": "",
+                                "type": "textarea"
+                            }
+                        },
+                        "tip": ""
+                    }
+                }
+            },
+
+            "contact": {
+                "title": "联系我们",
+                "display": "1",
+                "vars": {
+                    "sub_title": {
+                        "title": "标题",
+                        "value": "联系我们/Contact",
+                        "type": "text",
+                        "placeholder": "请输入标题",
+                        "tip": "",
+                        "rule": {
+                            "require": true
+                        }
+                    },
+                    "image": {
+                        "title": "图片",
+                        "value": "",
+                        "type": "image",
+                        "placeholder": "请输入标题",
+                        "tip": "",
+                        "rule": {
+                            "require": true
+                        }
+                    },
+                    "values": {
+                        "title": "合作客户",
+                        "value": [
+                            {
+                                "title": "愿景",
+                                "url": "#",
+                                "content": "成为大众信赖和喜爱的国民企业"
+                            },
+                            {
+                                "title": "使命",
+                                "url": "#",
+                                "content": "助力中小企业人，实现联合创富梦"
+                            },
+                            {
+                                "title": "发展理念",
+                                "url": "#",
+                                "content": "做实、做强、做大、做好、做长"
+                            },
+                            {
+                                "title": "企业精神",
+                                "url": "#",
+                                "content": "自然 真实 高效"
+                            },
+                            {
+                                "title": "价值观",
+                                "url": "#",
+                                "content": "诚实守信 业绩导向 以人为本 创新发展"
+                            }
+
+                        ],
+                        "type": "array",
+                        "item": {
+                            "title": {
+                                "title": "标题",
+                                "value": "",
+                                "type": "text"
+                            },
+                            "url": {
+                                "title": "链接",
+                                "value": "",
+                                "type": "text"
+                            },
+                            "content": {
+                                "title": "图标",
+                                "value": "",
+                                "type": "textarea"
+                            }
+                        },
+                        "tip": ""
+                    }
+                }
             }
+
         }
     }
 }

@@ -21,7 +21,7 @@
                     'post.create_time'=>['egt',0]
                     ];
                 </php>
-                <portal:articles item="vo" where="$where" order="post.create_time DESC" page="10"
+                <portal:articles item="vo" where="$where" order="post.is_top DESC, post.create_time DESC" page="10"
                                  relation="categories"
                                  categoryIds="$category.id"
                                  returnVarName="articles_data">
