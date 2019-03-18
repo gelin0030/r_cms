@@ -5,5 +5,4 @@
 .idea
 composer.lock
 /api
-/data
 /public/api

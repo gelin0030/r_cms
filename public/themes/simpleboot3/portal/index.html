@@ -259,29 +259,7 @@
             </div>
         </widget>
 
-        <widget name="about">
-            <div class="p_title">
-                <div class="text-center">
-                    <span class="p_body">{$widget.vars.sub_title}</span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="p_article">
-                        <img class="img-cover" src="upload/{$widget.vars.image}" alt="">
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="contact">
-                        <foreach name="$widget['vars']['values']" item="vo">
-                            <div>{$vo.content}</div>
-
-                        </foreach>
-                    </div>
-                </div>
-            </div>
-        </widget>
-
+      
         <!---->
         <include file="public@footer"/>
     </div>
